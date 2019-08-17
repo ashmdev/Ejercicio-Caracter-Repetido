@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejercicio prueba</title>
+    <link rel="stylesheet" href="./assets/vendor/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2></h2>
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          Ejercicio con palabras
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="cadena">Ingrese una cadena de caracteres</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cadena"
+              aria-describedby="strHelp"
+              placeholder="Cadena + Enter"
+              onkeypress="caracterRepetido(event)"
+            />
+            <small id="strHelp" class="form-text text-muted"
+              >Debe ingresar una cadena de caracteres, de esta se retornará la
+              primera repetición de caracteres.</small
+            >
+          </div>
+        </div>
+        <div id="resultado" class="card-footer bg-dark text-white"></div>
+      </div>
+    </div>
+
+    <!-- Solucion al ejercicio-->
+    <script src="./assets/custom/js/script.js"></script>
+
+    <!-- Ejemplo mqtt-->
+    <script src="./assets/vendor/js/mqttws31.min.js"></script>
+    <script src="./assets/custom/js/MQTT.js"></script>
+  </body>
+</html>
